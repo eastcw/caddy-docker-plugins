@@ -8,14 +8,8 @@ on:
     - cron: "51 5 1 * *" # runs at 05:51 on the first of every month
   push:
     branches: main
-    paths-ignore:
-      - "**/README.md"
-      - "**/LICENSE"
-  pull_request:
-    branches: main
-    paths-ignore:
-      - "**/README.md"
-      - "**/LICENSE"
+    paths:
+      - "Dockerfile"
 
 # Environment variables available to all jobs and steps in this workflow
 env:
